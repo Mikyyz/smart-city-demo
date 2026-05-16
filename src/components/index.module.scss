@@ -1,0 +1,62 @@
+.containerHeader {
+  background-image: url("@/assets/header.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 64px;
+  width: 100%;
+  position: relative;
+}
+
+.headerTitle {
+  color: white;
+  font-size: 28px;
+  text-indent: 2px;
+  position: absolute;
+  top: 38%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: var(--text-shadow);
+  filter: var(--text-filter);
+}
+
+.borderBox {
+  position: relative;
+  overflow: hidden;
+}
+
+/* 背景SVG */
+.borderBoxBg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* 右上角 ICON 外层（关键） */
+.borderBoxIconWrap {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+
+  /* 防止被裁剪 */
+  overflow: visible;
+}
+
+/* 右上角 icon（关键） */
+.borderBoxIcon {
+  width: 80px;
+  height: 34px;
+  display: block;
+}
+
+/* 内容层 */
+.borderBoxContent {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+}

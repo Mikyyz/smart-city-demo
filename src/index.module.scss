@@ -1,0 +1,18 @@
+:root {
+  --text-shadow:
+    0 0 3px rgba(0, 220, 255, 0.8),
+    0 0 10px rgba(0, 180, 255, 0.7);
+  --text-filter: drop-shadow(0 0 6px rgba(0, 160, 255, 0.5));
+}
+html {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  height: 100%;
+  width: 100%;
+}
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background: radial-gradient(circle at center, #061a3a, #020817);
+  overflow: hidden;
+}
